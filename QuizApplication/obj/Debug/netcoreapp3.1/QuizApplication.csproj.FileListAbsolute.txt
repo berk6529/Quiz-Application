@@ -1,0 +1,12 @@
+C:\Users\Brad Berkobien\source\repos\QuizApplication\bin\Debug\netcoreapp3.1\QuizApplication.exe
+C:\Users\Brad Berkobien\source\repos\QuizApplication\bin\Debug\netcoreapp3.1\QuizApplication.deps.json
+C:\Users\Brad Berkobien\source\repos\QuizApplication\bin\Debug\netcoreapp3.1\QuizApplication.runtimeconfig.json
+C:\Users\Brad Berkobien\source\repos\QuizApplication\bin\Debug\netcoreapp3.1\QuizApplication.runtimeconfig.dev.json
+C:\Users\Brad Berkobien\source\repos\QuizApplication\bin\Debug\netcoreapp3.1\QuizApplication.dll
+C:\Users\Brad Berkobien\source\repos\QuizApplication\bin\Debug\netcoreapp3.1\QuizApplication.pdb
+C:\Users\Brad Berkobien\source\repos\QuizApplication\obj\Debug\netcoreapp3.1\QuizApplication.AssemblyInfoInputs.cache
+C:\Users\Brad Berkobien\source\repos\QuizApplication\obj\Debug\netcoreapp3.1\QuizApplication.AssemblyInfo.cs
+C:\Users\Brad Berkobien\source\repos\QuizApplication\obj\Debug\netcoreapp3.1\QuizApplication.csproj.CoreCompileInputs.cache
+C:\Users\Brad Berkobien\source\repos\QuizApplication\obj\Debug\netcoreapp3.1\QuizApplication.dll
+C:\Users\Brad Berkobien\source\repos\QuizApplication\obj\Debug\netcoreapp3.1\QuizApplication.pdb
+C:\Users\Brad Berkobien\source\repos\QuizApplication\obj\Debug\netcoreapp3.1\QuizApplication.genruntimeconfig.cache
