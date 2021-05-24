@@ -17,7 +17,7 @@ namespace QuizApplication
 
         public QuizFile(string path)
         {
-            Path = Regex.Replace(path, @"\\", @"\");
+            Path = path;
         }
 
         public string[] GetAllFileLines()

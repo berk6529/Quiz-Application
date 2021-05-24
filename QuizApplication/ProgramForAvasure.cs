@@ -4,11 +4,11 @@
     {
         public static void Main(string[] args)
         {
-            string expectedPath = @"C:\Users\Brad Berkobien\Desktop\Avasure Interview\QuizAppFileConsumer\FileToConsume.txt";
+            string expectedPath = @"C:\Users\Brad Berkobien\OneDrive\Desktop\Avasure Interview\QuizAppFileConsumer\FileToConsume.txt";
             string[] lines;
             int errorCount;
 
-            //Create the new quiz file with the path given (override traditional constructor
+            //Create the new quiz file with the path given (override traditional constructor)
             QuizFile quizFile = new QuizFile(expectedPath);
 
             //Try to get all of the lines in the quizFile
