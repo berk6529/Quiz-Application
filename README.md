@@ -19,6 +19,16 @@ answered.
 - The console application should incorporate error handling.
 - The console application should be unit tested.
 
+### The work submitted will be evaluated based on the following: ###      
+- Use of OOP design principles.      
+- Separation of concerns.      
+- Exception and error handling.      
+- Readability and maintainability of the code (e.g. formatting, comments and cleanliness).      
+- Organization of classes within the project.
+- Use of Dependency Injection.
+- Testability of the code.      
+- Thoroughness and coverage of unit tests
+
 ### Question File Format ###
 Format
 (QUESTION_NUBMER) QUESTION TEXT
