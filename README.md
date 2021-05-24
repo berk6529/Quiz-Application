@@ -4,7 +4,6 @@ Creating a console application for a Job Interview
 ### Interview - Take Home ###
 The goal of this exercise is to get an overall feel for problem solving, design, ability to follow
 requirements and programming style of the applicant.
-Assignment
 
 ### Create a console application using a programming language of your choice that fulfills the following ###
 requirements:
