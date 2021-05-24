@@ -31,17 +31,5 @@ namespace QuizApplicationUnitTests
 
         }
 
-
-        [TestMethod]
-        [ExpectedException(typeof(NullReferenceException))]
-        public void TestAskQuestionsAndReturnResultsToUserForEmptyFile()
-        {
-            string[] lines = null;
-
-            ProgramForAvasure.AskQuestionsAndReturnResultsToUser(lines);
-
-        }
-
-
     }
 }

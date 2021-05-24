@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Text.RegularExpressions;
 
 namespace QuizApplication
 {
@@ -77,46 +76,56 @@ namespace QuizApplication
         {
             int correctAnswers = 0, totalQuestions = 0, score = 0;
 
-            foreach (string line in lines)
+            if (lines != null)
             {
-                string trimmedLine = line.Trim();
-                int answer;
-
-                //Check for the answer line (do nothing with variable)
-                if (trimmedLine.Length == 1 && int.TryParse(trimmedLine, out answer))
+                foreach (string line in lines)
                 {
-                    totalQuestions += 1;
+                    string trimmedLine = line.Trim();
+                    int answer;
 
-                    string userAnswerInput = Console.ReadLine();
-
-                    if (line == userAnswerInput)
+                    //Check for the answer line (do nothing with variable)
+                    if (trimmedLine.Length == 1 && int.TryParse(trimmedLine, out answer))
                     {
-                        Console.WriteLine("Your answer is correct. Nice Work!!! \n");
-                        correctAnswers += 1;
+                        totalQuestions += 1;
+
+                        string userAnswerInput = Console.ReadLine();
+
+                        if (line == userAnswerInput)
+                        {
+                            Console.WriteLine("Your answer is correct. Nice Work!!! \n");
+                            correctAnswers += 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Your answer is incorrect, the correct answer is {0}. \n", line);
+                        }
+
+
                     }
                     else
                     {
-                        Console.WriteLine("Your answer is incorrect, the correct answer is {0}. \n", line);
+                        Console.WriteLine(line);
                     }
 
-
                 }
-                else
+
+                if (totalQuestions != 0)
                 {
-                    Console.WriteLine(line);
+                    // Rounds users correct answer score up
+                    score = CalculateScore(correctAnswers, totalQuestions);
                 }
 
-            }
+                // Prints the score
+                Console.WriteLine("You answered {0} questions correctly out of {1}. Your score on this quiz is %{2}", correctAnswers, totalQuestions, score);
 
-            if (totalQuestions != 0)
-            {
-                // Rounds users correct answer score up
-                score = (int)Math.Round((double)(100 * correctAnswers) / totalQuestions);
             }
-
-            // Prints the score
-            Console.WriteLine("You answered {0} questions correctly out of {1}. Your score on this quiz is %{2}", correctAnswers, totalQuestions, score);
 
         }
+
+        public int CalculateScore(int correctAnswers, int totalQuestions)
+        {
+            return (int)Math.Round((double)(100 * correctAnswers) / totalQuestions);
+        }
+
     }
 }
