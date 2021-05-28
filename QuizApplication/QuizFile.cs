@@ -55,8 +55,17 @@ namespace QuizApplication
                 string trimmedLine = line.Trim();
                 int answer;
 
+                //Answers are non-numeric
                 if (trimmedLine.Length == 1 && !int.TryParse(trimmedLine, out answer))
                 {
+                    Console.WriteLine("One of your answers is invalid: {0}", line);
+                    return 1;
+                }
+
+                // Questions are out of order
+                if (trimmedLine.Contains("("))
+                {
+                    
                     Console.WriteLine("One of your answers is invalid: {0}", line);
                     return 1;
                 }
@@ -86,21 +95,20 @@ namespace QuizApplication
                     //Check for the answer line (do nothing with variable)
                     if (trimmedLine.Length == 1 && int.TryParse(trimmedLine, out answer))
                     {
-                        totalQuestions += 1;
+                        totalQuestions++;
 
                         string userAnswerInput = Console.ReadLine();
 
+                        //The user selected the right answer
                         if (line == userAnswerInput)
                         {
                             Console.WriteLine("Your answer is correct. Nice Work!!! \n");
-                            correctAnswers += 1;
+                            correctAnswers++;
                         }
                         else
                         {
                             Console.WriteLine("Your answer is incorrect, the correct answer is {0}. \n", line);
                         }
-
-
                     }
                     else
                     {

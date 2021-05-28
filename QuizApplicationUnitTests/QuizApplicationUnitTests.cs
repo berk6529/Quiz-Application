@@ -12,7 +12,7 @@ namespace QuizApplicationUnitTests
         [TestMethod]
         public void TestSanitizeAndValidateInputFileNotFound()
         {
-            string expectedEmptyPath = @"C:\Users\Brad Berkobien\Desktop\Avasure Interview\QuizAppFileConsumer\FileToConsumeError.txt";
+            string expectedEmptyPath = @"C:\Users\Brad Berkobien\OneDrive\Desktop\Avasure Interview\QuizAppFileConsumer\FileToConsume.txt";
 
             Assert.IsFalse(File.Exists(expectedEmptyPath));
         }
@@ -20,7 +20,7 @@ namespace QuizApplicationUnitTests
         [TestMethod]
         public void TestSanitizeAndValidateInputForNonNumericAnswer()
         {
-            string expectedPath = @"C:\Users\Brad Berkobien\Desktop\Avasure Interview\QuizAppFileConsumer\FileToConsumeNonNumericAnswer.txt";
+            string expectedPath = @"C:\Users\Brad Berkobien\OneDrive\Desktop\Avasure Interview\QuizAppFileConsumer\FileToConsumeNonNumericAnswer.txt";
             string[] lines = null;
             int errorCount = 1;
 
