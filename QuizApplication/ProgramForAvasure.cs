@@ -18,7 +18,7 @@
             errorCount = quizFile.SanitizeAndValidateInput(lines);
 
             //If no errors, Ask the user the questions / show them answers and scores
-            if(errorCount == 0)
+            if (errorCount == 0)
             {
                 quizFile.AskQuestionsAndReturnResultsToUser(lines);
             }

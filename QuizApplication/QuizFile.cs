@@ -61,14 +61,6 @@ namespace QuizApplication
                     Console.WriteLine("One of your answers is invalid: {0}", line);
                     return 1;
                 }
-
-                // Questions are out of order
-                if (trimmedLine.Contains("("))
-                {
-                    
-                    Console.WriteLine("One of your answers is invalid: {0}", line);
-                    return 1;
-                }
             }
             return 0;
         }
@@ -92,7 +84,7 @@ namespace QuizApplication
                     string trimmedLine = line.Trim();
                     int answer;
 
-                    //Check for the answer line (do nothing with variable)
+                    //Check for the answer line
                     if (trimmedLine.Length == 1 && int.TryParse(trimmedLine, out answer))
                     {
                         totalQuestions++;
@@ -107,7 +99,7 @@ namespace QuizApplication
                         }
                         else
                         {
-                            Console.WriteLine("Your answer is incorrect, the correct answer is {0}. \n", line);
+                            Console.WriteLine("Your answer is incorrect, the correct answer is number {0}. \n", answer);
                         }
                     }
                     else
