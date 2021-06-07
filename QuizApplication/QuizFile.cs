@@ -4,7 +4,7 @@ using System.IO;
 namespace QuizApplication
 {
 
-    public class QuizFile
+    public class QuizFile : IQuizFile
     {
         public string Path { get; set; }
         public string[] Lines { get; set; }
